@@ -53,8 +53,8 @@ export default function ContactSection() {
               </div>
               <div>
                 <h3 className="font-poppins font-bold mb-1 text-white">Email</h3>
-                <p className="text-gray-400 font-inter">nazia@example.com</p>
-                <a href="mailto:nazia@example.com" className="text-blue-400 font-inter text-sm mt-2 hover:underline inline-block">
+                <p className="text-gray-400 font-inter">naziasultana0430@gmail.com</p>
+                <a href="mailto:naziasultana0430@gmail.com" className="text-blue-400 font-inter text-sm mt-2 hover:underline inline-block">
                   Send an email →
                 </a>
               </div>
@@ -67,8 +67,8 @@ export default function ContactSection() {
               </div>
               <div>
                 <h3 className="font-poppins font-bold mb-1 text-white">Phone</h3>
-                <p className="text-gray-400 font-inter">+91 (XXX) XXX-XXXX</p>
-                <a href="tel:+911234567890" className="text-blue-400 font-inter text-sm mt-2 hover:underline inline-block">
+                <p className="text-gray-400 font-inter">+91 7993820701</p>
+                <a href="tel:+917993820701" className="text-blue-400 font-inter text-sm mt-2 hover:underline inline-block">
                   Give me a call →
                 </a>
               </div>

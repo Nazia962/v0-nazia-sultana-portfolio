@@ -1,14 +1,15 @@
 'use client'
 
-import { Github, Linkedin, Mail, ExternalLink, Heart } from 'lucide-react'
+import { Github, Linkedin, Mail, ExternalLink, Heart, Twitter } from 'lucide-react'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
-    { icon: Github, label: 'GitHub', url: '#' },
-    { icon: Linkedin, label: 'LinkedIn', url: '#' },
-    { icon: Mail, label: 'Email', url: 'mailto:nazia@example.com' },
+    { icon: Github, label: 'GitHub', url: 'https://github.com/Nazia962' },
+    { icon: Linkedin, label: 'LinkedIn', url: 'https://www.linkedin.com/in/nazia-sultana-a8b3482b/' },
+    { icon: Twitter, label: 'Twitter', url: 'https://twitter.com/Naziasultana043' },
+    { icon: Mail, label: 'Email', url: 'mailto:naziasultana0430@gmail.com' },
   ]
 
   const footerLinks = [

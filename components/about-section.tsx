@@ -20,7 +20,7 @@ export default function AboutSection() {
           {/* Left: About text */}
           <div className="space-y-6">
             <p className="text-lg font-inter text-gray-400 leading-relaxed">
-              I am an 19-year-old B.Tech student passionate about combining technology and education. I enjoy building intelligent systems that solve real-world academic problems, such as predictive library systems and AI-powered learning tools.
+              I am a B.Tech student passionate about combining technology and education. I enjoy building intelligent systems that solve real-world academic problems, such as predictive healthcare intelligence and AI-powered learning tools.
             </p>
             <p className="text-lg font-inter text-gray-400 leading-relaxed">
               My journey in tech started with curiosity about how systems work, evolving into a passion for creating elegant, user-centric solutions. I specialize in building full-stack web applications with modern technologies and clean, maintainable code.
@@ -32,7 +32,7 @@ export default function AboutSection() {
             {/* Highlight stats */}
             <div className="grid grid-cols-3 gap-4 pt-8">
               <div className="glass-effect p-4 rounded-lg text-center">
-                <div className="text-2xl font-poppins font-bold text-blue-400">5+</div>
+                <div className="text-2xl font-poppins font-bold text-blue-400">6+</div>
                 <div className="text-sm font-inter text-gray-500 mt-1">Projects</div>
               </div>
               <div className="glass-effect p-4 rounded-lg text-center">
