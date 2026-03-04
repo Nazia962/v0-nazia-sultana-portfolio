@@ -1,35 +1,104 @@
-# v0-nazia-sultana-portfolio
+# Nazia Sultana | Web Developer Portfolio
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
+A professional portfolio showcasing projects, skills, and technical work. Built with **Next.js**, **Tailwind CSS**, **TypeScript**, and modern UI/UX practices. Designed to be responsive, professional, and optimized for performance.
 
-## Built with v0
+---
 
-This repository is linked to a [v0](https://v0.app) project. You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.
+## Live Demo
+[View Portfolio](https://vm-vdnctewshdk3oopqc49gsp.vusercontent.net/#projects)
 
-[Continue working on v0 →](https://v0.app/chat/projects/prj_cP54lB6yADnGAzIbKFyRIqPokKzw)
+---
 
-## Getting Started
+## Tech Stack
+- **Framework:** Next.js 15
+- **Styling:** Tailwind CSS
+- **Language:** TypeScript
+- **UI Components:** Shadcn UI / Radix UI
+- **Runtime:** Bun
+- **Deployment Ready:** Vercel
 
-First, run the development server:
+---
 
+## Projects
+
+### Smart Library Management System
+![Smart Library Dashboard](./public/images/smart-library-dashboard.webp)
+- **Description:** AI-powered library dashboard predicting book demand for efficient management.
+- **Tech Stack:** Next.js, Tailwind CSS, AI
+- **Live Demo:** [Click here](https://your-live-demo-link)
+
+### Memory Booster Game
+![Memory Booster Game UI](./public/images/memory-booster-game-ui.webp)
+- **Description:** AI-powered memory game to train cognitive skills and reaction time.
+- **Tech Stack:** Next.js, Tailwind CSS, JavaScript
+- **Live Demo:** [Click here](https://your-live-demo-link)
+
+### LifeLine AI - Predictive Healthcare Intelligence
+![LifeLine AI Dashboard](./public/images/lifeline-ai-dashboard.webp)
+- **Description:** Predictive system for hospital admissions, ICU demand, and staff workload.
+- **Tech Stack:** Next.js, Tailwind CSS, TypeScript, AI
+- **Live Demo:** [Click here](https://orchids-hospital-predictive-system.vercel.app/)
+
+---
+
+## Key Features
+- Clean and professional design
+- Fully responsive layout (desktop, tablet, mobile)
+- Smooth microinteractions and animations
+- Optimized images (WebP) and lazy loading
+- SEO-friendly and performance optimized
+- Structured project case-study format
+
+---
+
+## Skills
+
+**Technical Skills:**
+- Next.js, Tailwind CSS, TypeScript
+- Machine Learning Basics
+- UI/UX Design
+
+**Core Strengths:**
+- Analytical Thinking
+- System Design
+- Clean Code Practices
+- Problem Solving
+
+---
+
+## Currently Exploring
+- Advanced React patterns
+- AI model integration
+- Scalable web architecture
+- Performance optimization
+- Real-time systems
+
+---
+
+## About Me
+I am a B.Tech student passionate about combining technology and education. I enjoy building intelligent systems that solve real-world academic problems, such as predictive library systems and AI-powered learning tools.  
+
+I build smart, user-friendly web applications with clean design and real-world impact. Passionate about AI, productivity tools, and creative problem-solving.
+
+---
+
+## Contact
+- **Email:** [naziasultana0430@gmail.com](mailto:naziasultana0430@gmail.com)  
+- **LinkedIn:** [Nazia Sultana](https://www.linkedin.com/in/nazia-sultana-a8b3482b/)  
+- **GitHub:** [Nazia962](https://github.com/Nazia962)  
+- **Twitter:** [@Naziasultana043](https://twitter.com/Naziasultana043)
+
+---
+
+## Call to Action
+Interested in working together?  
+Let's build innovative and meaningful digital solutions.  
+
+[ Hire Me ] | [ View Resume ]
+
+---
+
+## Run Locally
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-## Learn More
-
-To learn more, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [v0 Documentation](https://v0.app/docs) - learn about v0 and how to use it.
-
-<a href="https://v0.app/chat/api/kiro/clone/Nazia962/v0-nazia-sultana-portfolio" alt="Open in Kiro"><img src="https://pdgvvgmkdvyeydso.public.blob.vercel-storage.com/open%20in%20kiro.svg?sanitize=true" /></a>
+git clone https://github.com/Nazia962/portfolio.git
