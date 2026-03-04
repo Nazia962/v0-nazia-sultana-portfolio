@@ -23,14 +23,14 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="bg-muted/40 border-t border-primary/20 py-12 px-4 md:px-6">
+    <footer className="bg-muted/40 border-t border-blue-500/20 py-12 px-4 md:px-6">
       <div className="max-w-6xl mx-auto">
         {/* Main Footer Content */}
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="text-2xl font-bold gradient-text">Nazia Sultana</div>
-            <p className="text-secondary text-sm leading-relaxed">
+            <div className="text-2xl font-poppins font-bold gradient-text">Nazia Sultana</div>
+            <p className="text-gray-400 font-inter text-sm leading-relaxed">
               B.Tech student passionate about building beautiful, functional digital experiences.
             </p>
           </div>
@@ -38,11 +38,11 @@ export default function Footer() {
           {/* Footer Links */}
           {footerLinks.map((section, index) => (
             <div key={index}>
-              <h4 className="font-semibold mb-3">{section.title}</h4>
+              <h4 className="font-poppins font-semibold mb-3 text-white">{section.title}</h4>
               <ul className="space-y-2">
                 {section.links.map((link, i) => (
                   <li key={i}>
-                    <a href="#" className="text-secondary hover:text-primary text-sm transition-colors">
+                    <a href="#" className="text-gray-400 hover:text-blue-400 font-inter text-sm smooth-transition">
                       {link}
                     </a>
                   </li>
@@ -53,15 +53,15 @@ export default function Footer() {
 
           {/* Newsletter / CTA */}
           <div>
-            <h4 className="font-semibold mb-3">Get Updates</h4>
-            <p className="text-secondary text-sm mb-3">Subscribe for latest projects and insights.</p>
+            <h4 className="font-poppins font-semibold mb-3 text-white">Get Updates</h4>
+            <p className="text-gray-400 font-inter text-sm mb-3">Subscribe for latest projects and insights.</p>
             <div className="flex">
               <input
                 type="email"
                 placeholder="your@email.com"
-                className="flex-1 bg-muted border border-primary/20 focus:border-primary rounded-l-lg px-3 py-2 text-sm text-foreground placeholder-secondary outline-none transition-colors"
+                className="flex-1 bg-blue-500/5 border border-blue-500/20 focus:border-blue-500 rounded-l-lg px-3 py-2 text-sm font-inter text-white placeholder-gray-500 outline-none smooth-transition"
               />
-              <button className="bg-primary text-primary-foreground px-3 py-2 rounded-r-lg hover:bg-primary/90 transition-colors">
+              <button className="bg-blue-500 text-white px-3 py-2 rounded-r-lg hover:bg-blue-600 smooth-transition">
                 <ExternalLink size={16} />
               </button>
             </div>
@@ -74,9 +74,9 @@ export default function Footer() {
         {/* Bottom Footer */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Copyright */}
-          <p className="text-secondary text-sm text-center md:text-left">
+          <p className="text-gray-500 font-inter text-sm text-center md:text-left">
             © {currentYear} Nazia Sultana. Crafted with{' '}
-            <Heart size={14} className="inline text-primary" /> using Next.js & Tailwind CSS.
+            <Heart size={14} className="inline text-blue-400" /> using Next.js & Tailwind CSS.
           </p>
 
           {/* Social Links */}
@@ -88,7 +88,7 @@ export default function Footer() {
                   key={index}
                   href={social.url}
                   title={social.label}
-                  className="w-10 h-10 glass-effect rounded-lg flex items-center justify-center text-primary hover:text-primary hover:bg-primary/10 transition-all duration-300 hover:scale-110"
+                  className="w-10 h-10 glass-effect rounded-lg flex items-center justify-center text-blue-400 hover:text-white hover:bg-blue-500/20 smooth-transition hover:scale-110"
                 >
                   <IconComponent size={18} />
                 </a>
@@ -97,12 +97,12 @@ export default function Footer() {
           </div>
 
           {/* Legal Links */}
-          <div className="flex gap-4 text-secondary text-sm">
-            <a href="#" className="hover:text-primary transition-colors">
+          <div className="flex gap-4 text-gray-500 font-inter text-sm">
+            <a href="#" className="hover:text-blue-400 smooth-transition">
               Privacy
             </a>
-            <span className="text-primary/30">·</span>
-            <a href="#" className="hover:text-primary transition-colors">
+            <span className="text-blue-500/30">·</span>
+            <a href="#" className="hover:text-blue-400 smooth-transition">
               Terms
             </a>
           </div>

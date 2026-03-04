@@ -1,9 +1,10 @@
 import type { Metadata, Viewport } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Inter, Poppins, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const _geist = Geist({ subsets: ["latin"] });
+const _inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
+const _poppins = Poppins({ subsets: ["latin"], variable: '--font-poppins', weight: ['400', '500', '600', '700', '800'] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const viewport: Viewport = {
@@ -14,8 +15,8 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: 'Nazia Sultana | B.Tech Student & Developer',
-  description: 'Portfolio of Nazia Sultana - B.Tech student showcasing projects, skills, and expertise in web development and technology.',
+  title: 'Nazia Sultana | B.Tech Student & Web Developer Portfolio',
+  description: 'B.Tech student passionate about web development, AI tools and building intelligent digital solutions. Explore projects, skills and technical work.',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -43,7 +44,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-sans antialiased">
+      <body className={`${_inter.variable} ${_poppins.variable} font-inter antialiased`}>
         {children}
         <Analytics />
       </body>

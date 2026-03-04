@@ -1,46 +1,65 @@
 'use client'
 
+import { useEffect, useState } from 'react'
+import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 
 export default function HeroSection() {
+  const [isLoaded, setIsLoaded] = useState(false)
+
+  useEffect(() => {
+    setIsLoaded(true)
+  }, [])
+
   return (
-    <section className="min-h-screen flex items-center justify-center pt-20 px-4 md:px-6">
-      <div className="text-center max-w-4xl mx-auto space-y-6">
-        {/* Glowing accent line */}
-        <div className="flex items-center justify-center gap-2 mb-4">
-          <div className="w-8 h-0.5 bg-gradient-to-r from-transparent to-primary"></div>
-          <span className="text-primary text-sm font-semibold">WELCOME TO MY PORTFOLIO</span>
-          <div className="w-8 h-0.5 bg-gradient-to-l from-transparent to-primary"></div>
+    <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-20 pb-10 sm:pb-20 relative overflow-hidden">
+      {/* Background gradient effect */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse"></div>
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-cyan-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse" style={{ animationDelay: '2s' }}></div>
+      </div>
+
+      <div className="max-w-4xl mx-auto text-center space-y-8 sm:space-y-10">
+        {/* Animated badge */}
+        <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/30 smooth-transition ${isLoaded ? 'opacity-100' : 'opacity-0'}`} style={{ transitionDelay: '0.1s' }}>
+          <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
+          <span className="text-sm font-inter text-blue-400">Welcome to my portfolio</span>
         </div>
 
         {/* Main heading */}
-        <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-          <span className="block text-foreground">Nazia Sultana</span>
-          <span className="block gradient-text text-5xl md:text-6xl">B.Tech Student & Developer</span>
-        </h1>
+        <div className={`space-y-4 sm:space-y-6 smooth-transition ${isLoaded ? 'opacity-100' : 'opacity-0'}`} style={{ transitionDelay: '0.2s' }}>
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-poppins font-bold text-white leading-tight">
+            Nazia Sultana
+          </h1>
+          <p className="text-xl sm:text-2xl font-poppins font-semibold text-blue-400">
+            B.Tech Student | Aspiring Web Developer
+          </p>
+        </div>
 
-        {/* Subheading */}
-        <p className="text-lg md:text-xl text-secondary leading-relaxed max-w-2xl mx-auto">
-          Passionate about crafting elegant digital solutions with cutting-edge technology. 
-          Exploring the intersection of design and development.
+        {/* Tagline */}
+        <p className={`text-lg sm:text-xl font-inter text-gray-400 max-w-2xl mx-auto leading-relaxed smooth-transition ${isLoaded ? 'opacity-100' : 'opacity-0'}`} style={{ transitionDelay: '0.3s' }}>
+          I build smart, user-friendly web applications with clean design and real-world impact. Passionate about AI, productivity tools, and creative problem solving.
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-          <button className="glow-primary-hover group bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all duration-300 hover:translate-y-[-2px]">
+        <div className={`flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center smooth-transition ${isLoaded ? 'opacity-100' : 'opacity-0'}`} style={{ transitionDelay: '0.4s' }}>
+          <Link href="#projects" className="glow-primary-hover px-8 py-3 rounded-lg bg-blue-500 text-white font-poppins font-semibold flex items-center gap-2 hover:gap-3">
             View My Work
-            <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
-          </button>
-          <button className="glass-effect-hover glass-effect text-primary px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:translate-y-[-2px]">
+            <ArrowRight size={20} />
+          </Link>
+          <Link href="#contact" className="btn-smooth px-8 py-3 rounded-lg border border-blue-500/50 text-white font-poppins font-semibold hover:bg-blue-500/10">
             Get In Touch
-          </button>
+          </Link>
         </div>
-      </div>
 
-      {/* Animated scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-primary rounded-full flex items-start justify-center p-2">
-          <div className="w-1 h-2 bg-primary rounded-full animate-pulse"></div>
+        {/* Scroll indicator */}
+        <div className={`flex justify-center pt-8 smooth-transition ${isLoaded ? 'opacity-100' : 'opacity-0'}`} style={{ transitionDelay: '0.6s' }}>
+          <div className="flex flex-col items-center gap-2 text-gray-500 animate-bounce">
+            <span className="text-sm font-inter">Scroll to explore</span>
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </div>
         </div>
       </div>
     </section>

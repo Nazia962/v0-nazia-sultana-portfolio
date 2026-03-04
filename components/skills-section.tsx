@@ -50,8 +50,8 @@ export default function SkillsSection() {
       <div className="max-w-6xl mx-auto">
         {/* Section header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Skills & Expertise</h2>
-          <p className="text-secondary text-lg max-w-2xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-poppins font-bold mb-4">Skills & Expertise</h2>
+          <p className="text-gray-400 font-inter text-lg max-w-2xl mx-auto">
             A comprehensive toolkit of technologies and skills developed through continuous learning and practical projects.
           </p>
           <div className="section-divider w-24 mx-auto mt-6"></div>
@@ -64,18 +64,18 @@ export default function SkillsSection() {
             return (
               <div
                 key={index}
-                className="glass-effect-hover glass-effect p-6 rounded-xl group transition-all duration-300 hover:border-primary/50 hover:shadow-xl"
+                className="glass-effect p-6 rounded-xl group scale-hover smooth-transition hover:border-blue-500/40"
               >
                 {/* Icon */}
-                <div className="mb-4 inline-block p-3 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
+                <div className="mb-4 inline-block p-3 bg-blue-500/10 rounded-lg group-hover:bg-blue-500/20 smooth-transition">
                   <IconComponent
                     size={28}
-                    className="text-primary group-hover:scale-110 transition-transform"
+                    className="text-blue-400 group-hover:scale-110 smooth-transition"
                   />
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
+                <h3 className="text-xl font-poppins font-bold mb-3 text-white">
                   {skill.name}
                 </h3>
 
@@ -84,7 +84,7 @@ export default function SkillsSection() {
                   {skill.items.map((item, i) => (
                     <span
                       key={i}
-                      className="px-3 py-1 bg-muted rounded-full text-sm text-secondary hover:text-primary hover:bg-primary/10 transition-all duration-300"
+                      className="px-3 py-1 bg-blue-500/10 rounded-full text-sm font-inter text-gray-400 hover:text-blue-400 hover:bg-blue-500/20 smooth-transition"
                     >
                       {item}
                     </span>
@@ -97,7 +97,7 @@ export default function SkillsSection() {
 
         {/* Additional skills highlight */}
         <div className="mt-16 glass-effect p-8 rounded-xl">
-          <h3 className="text-2xl font-bold mb-6">Other Competencies</h3>
+          <h3 className="text-2xl font-poppins font-bold mb-6 text-white">Other Competencies</h3>
           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
             {[
               { icon: GitBranch, text: 'Version Control' },
@@ -108,8 +108,8 @@ export default function SkillsSection() {
               const IconComponent = item.icon
               return (
                 <div key={i} className="flex items-center gap-3">
-                  <IconComponent size={20} className="text-primary flex-shrink-0" />
-                  <span className="text-secondary">{item.text}</span>
+                  <IconComponent size={20} className="text-blue-400 flex-shrink-0" />
+                  <span className="text-gray-400 font-inter">{item.text}</span>
                 </div>
               )
             })}
