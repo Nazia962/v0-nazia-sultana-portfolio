@@ -1,4 +1,5 @@
-![Portfolio Preview](/portfolio-preview.png)
+![Portfolio Preview](https://raw.githubusercontent.com/Nazia962/v0-nazia-sultana-portfolio/main/public/portfolio-preview.png)
+
 # Nazia Sultana | Web Developer Portfolio
 
 A professional portfolio showcasing projects, skills, and technical work. Built with **Next.js**, **Tailwind CSS**, **TypeScript**, and modern UI/UX practices. Designed to be responsive, professional, and optimized for performance.
