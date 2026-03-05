@@ -5,7 +5,7 @@ A professional portfolio showcasing projects, skills, and technical work. Built 
 ---
 
 ## Live Demo
-[View Portfolio](https://vm-vdnctewshdk3oopqc49gsp.vusercontent.net/#projects)
+[View Portfolio](https://v0-nazia-sultana-portfolio.vercel.app)
 
 ---
 
@@ -25,7 +25,7 @@ A professional portfolio showcasing projects, skills, and technical work. Built 
 ![Smart Library Dashboard](./public/images/smart-library-dashboard.webp)
 - **Description:** AI-powered library dashboard predicting book demand for efficient management.
 - **Tech Stack:** Next.js, Tailwind CSS, AI
-- **Live Demo:** [Click here](https://your-live-demo-link)
+- **Live Demo:** [Click here](https://v0-nazia-sultana-portfolio.vercel.app)
 
 ### Memory Booster Game
 ![Memory Booster Game UI](./public/images/memory-booster-game-ui.webp)
@@ -101,4 +101,13 @@ Let's build innovative and meaningful digital solutions.
 ## Run Locally
 1. Clone the repository:
 ```bash
-git clone https://github.com/Nazia962/portfolio.git
+git clone https://github.com/Nazia962/v0-nazia-sultana-portfolio.git
+
+2. Navigate to the project folder
+cd v0-nazia-sultana-portfolio
+
+3. Install dependencies
+npm install
+
+4. Start development server
+npm run dev
